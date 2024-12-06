@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.OrderItemMapper">
+
+    <!--解决实体类和数据库中属性名不一样的问题-->
+    <resultMap id="orderItemResultMap" type="orderItem">
+        <result column="brand_id" property="brandId"></result>
+        <result column="user_id" property="userId"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="total_price" property="totalPrice"></result>
+    </resultMap>
+
+</mapper>
